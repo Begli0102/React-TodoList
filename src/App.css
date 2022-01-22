@@ -8,10 +8,9 @@
 
 
 .container{
-  background: #3c424a;
+  background: #626f81;
  width: 600px;
  min-height: 100%;
-
 padding: 30px;
 border-radius: 10px;
 }
@@ -19,7 +18,7 @@ border-radius: 10px;
 .App {
   width: 100%;
   min-height: 100vh;
-  background: #9c7a85;
+  background: #f1eff0;
   display: flex;
   justify-content: center;
   padding: 50px auto;
@@ -64,19 +63,20 @@ form button{
   outline: none;
   border: none;
 margin-left: 10px;
-border-radius: 10px;
+color: white;
+text-transform: uppercase;
 }
 
 form button:hover{
   border: 2px solid rgb(161, 144, 148);
-  color: white;
+ 
 
 }
 
 .todo{
  display: flex;
  width: 80%;
- background-color: tomato;
+ background-color: #949494;
  justify-content: space-between;
  margin: 30px 20px;
  border-radius: 10px;

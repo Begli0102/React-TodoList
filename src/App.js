@@ -1,9 +1,9 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 
 function App() {
-const firstRender = useRef(true);
+
 
 const [inputValue, setInputValue] = useState('');
 const [todos, setToDos] = useState([]);
@@ -25,23 +25,6 @@ const handleDelete=(id)=>{
   setToDos(todos.filter((todo)=>todo.id !==id))
 } 
 
-useEffect(()=>{
-if(firstRender.current){
-
-  firstRender.current=false;
-}else{
-  localStorage.setItem('Todo', JSON.stringify([...todos]))
-}
-
-}, [todos]);
-
-useEffect(()=>{
-
-if(localStorage.getItem('Todo') !==null){
-  const newTodos = localStorage.getItem('Todo');
-  setToDos(JSON.parse([...todos,newTodos]))
-}
-}, [])
 
   return (
     <div className="App">
