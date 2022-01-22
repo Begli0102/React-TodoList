@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Todo Application
+In this project a user can add and delete todo list.
+
+<img src ='src/image/todo.png'>
+
+<!-- [Click here to see the demo ](https://myflix1.netlify.app/) -->
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
